@@ -21,10 +21,23 @@ print(f"los productos son: {productos}")
 # =========================
 # ETAPA 2 - COMPRAS
 # =========================
+valor1 = float(input("Ingrese el valor de tus compras: "))
+resta = float(saldo) - valor1
+print(f"La resta de {saldo} y {valor1} es: {resta}")
+if resta < 0:
+    print("No tiene suficiente saldo para realizar esta compra.")
 
-# Mostrar el menú y procesar la opción seleccionada.
-# Utilizar las listas para obtener producto y precio.
-
+else:
+    print("Compra realizada con éxito.")
+while resta >= 0:
+    valor2 = float(input("Ingrese el valor de tus compras: "))
+    resta = resta - valor2
+    print(f"La resta de {saldo} y {valor1} y {valor2} es: {resta}")
+    if resta < 0:
+        print("No tiene suficiente saldo para realizar esta compra.")
+        break
+    else:
+        print("Compra realizada con éxito.")
 # =========================
 # ETAPA 3 - CICLO PRINCIPAL
 # =========================
