@@ -12,10 +12,11 @@
 # ETAPA 1 - INICIO
 # =========================
 
-# Crear las variables necesarias.
-# Crear las listas de productos y precios.
-# Pedir los datos del cliente.
-
+Nombre = (input("Ingrese su nombre: "))
+saldo = (input("Ingrese su saldo: "))
+print(f"hola {Nombre} su saldo es {saldo} ")
+productos = ["agua: 100", "pan:500", "manzanas: 300", "tostados: 1000"]
+print(f"los productos son: {productos}")
 
 # =========================
 # ETAPA 2 - COMPRAS
@@ -23,7 +24,6 @@
 
 # Mostrar el menú y procesar la opción seleccionada.
 # Utilizar las listas para obtener producto y precio.
-
 
 # =========================
 # ETAPA 3 - CICLO PRINCIPAL
